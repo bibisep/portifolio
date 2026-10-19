@@ -3,16 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça o portfólio de Bibisep, ciêntista de dados, analista de dados e desenvolvedora frontend, explore seus projetos, habilidades, conhecimentos e experiências.">
+    <meta name="description" content="Olá, seja bem-vindo ao meu Portfólio, sou a Bibisep, ciêntista de dados, analista de dados e desenvolvedora frontend, explore seus projetos, habilidades, conhecimentos e experiências.">
+    <link rel="stylesheet" href="style.css">
     <title>Bibisep | Portfólio</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
 </head>
+
+
+
 <body>
-    
+    <header>
+        <h1> <a href="/"> BS </a> </h1>
+
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li> <a href="#sobre"> Sobre </a> </li>
+                <li> <a href="#projetos"> Projetos </a> </li>
+                <li> <a href="#contato"> Contato </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section class="hero-section" aria-labelledby="hero-title">
+            <h2 id="hero-title">Design <span>premium</span>, engenharia de ponta.</h2>
+            <p>Desenvolvedora Front-End e UX/UI</p>
+            <p>Designer construindo experiências digitais modernas, acessíveis e de alta performance</p>
+
+            <ul>
+                <li> <a href="#projetos"> Ver meu trabalho </a> </li>
+                <li> <a href="#contato"> Entrar em contato </a> </li>
+            </ul>
+       </section> 
+
+       <section class="sobre-section" aria-labelledby="sobre-title">
+            <div class="about-text">
+                <h2 id="sobre-title"> Muito prazer, sou a <span>Bibisep</span> </h2>
+                <p>Atuo como desenvolvedora criando interfaces robustas e responsivas. Meu foco é unir o melhor do design centrado no usuário com o poder das tecnologias web modernas.</p>
+                <p>Além de desenvolvedora, também gosto de games, assistir séries e filmes, sou fã do Cristiano Ronaldo e o palmeiras é o melhor time do mundo!!!</p>
+            </div>
+
+            <img src="img/bibisep.png" alt="Icon de bibisep">
+       </section>
+
+       <section class="projetos-section" aria-labelledby="projetos-title">
+            <h2 id="projetos-title">Trabalhos Relevantes</h2>
+            <p>Uma seleção dos meus projetos mais relevantes envolvendo desenvolvimento frontend e design de interfaces</p>
+
+            <ul>
+                <li>
+                    <article>
+                        <div>
+                            <h3> Projeto PROA </h3>
+                            <p> Projeto focado em ajudar jovens de baixa renda.</p>
+                            <a href="#">Saiba Mais</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <article>
+                        <div>
+                            <h3> Projeto PROA </h3>
+                            <p> Projeto focado em ajudar jovens de baixa renda.</p>
+                            <a href="#">Saiba Mais</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <article>
+                        <div>
+                            <h3> Projeto PROA </h3>
+                            <p> Projeto focado em ajudar jovens de baixa renda.</p>
+                            <a href="#">Saiba Mais</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+       </section>
+
+       <section class="contato-section" aria-labelledby="contato-title">
+            <div>
+                <h2 id="contato-title">Pronto(a) para tirar sua <span>ideia</span> do papel?</h2>
+                <p>Seja para criar um produto novo, montar uma landing page de alta conversão ou discutir uma oportunidade incrível.</p>
+            </div>
+
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required placeholder="Ex: Rafaela Silva">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Ex: email@email.com" autocomplete="email">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" required placeholder="Ex: (11) 99999-9999" autocomplete="tel">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required placeholder="Ex: Olá, gostaria de falar sobre uma proposta bacana...."></textarea>
+
+                <button type="submit">Entrar em contato</button>
+            </form>
+       </section>
+    </main>
+
+    <footer>
+        <p> &copy;2026 Bibisep. Todos os direitos reservados.</p>
+
+        <nav>
+            <ul>
+                <li> <a href="https://linkedin.com" target="_blank"> Linkedin</a></li>
+                <li> <a href="https://github.com" target="_blank"> GitHub</a></li>
+                <li> <a href="https://instagram.com" target="_blank"> Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+
 </body>
 </html>
