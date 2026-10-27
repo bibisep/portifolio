@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,67 @@
 
     <title>Bibisep | Portfólio</title>
 
+    <!-- Fonte Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
     >
 
+    <!-- Font Awesome para os ícones do Dark Mode -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
+
         <h1>
             <a href="#hero">BS</a>
         </h1>
 
         <nav aria-label="Navegação Principal">
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#projetos">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+
+                <!-- DARK MODE -->
+                <li>
+                    <input type="checkbox" id="dark-mode">
+
+                    <label
+                        for="dark-mode"
+                        class="dark-mode-label"
+                        aria-label="Alternar modo claro e escuro"
+                    >
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-sun"></i>
+                    </label>
+                </li>
             </ul>
         </nav>
+
     </header>
 
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
         <!-- HERO -->
@@ -46,11 +81,14 @@
             class="hero-section"
             aria-labelledby="hero-title"
         >
+
             <h2 id="hero-title">
                 Design <span>premium</span>, engenharia de ponta.
             </h2>
 
-            <p>Desenvolvedora Front-End e UX/UI</p>
+            <p>
+                Desenvolvedora Front-End e UX/UI
+            </p>
 
             <p>
                 Designer construindo experiências digitais modernas,
@@ -59,13 +97,24 @@
 
             <ul>
                 <li>
-                    <a href="#projetos">Ver meu trabalho</a>
+                    <a
+                        href="#projetos"
+                        class="btn btn-primary"
+                    >
+                        Ver meu trabalho
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contato">Entrar em contato</a>
+                    <a
+                        href="#contato"
+                        class="btn btn-secondary"
+                    >
+                        Entrar em contato
+                    </a>
                 </li>
             </ul>
+
         </section>
 
 
@@ -75,6 +124,7 @@
             class="sobre-section"
             aria-labelledby="sobre-title"
         >
+
             <div class="about-text">
 
                 <h2 id="sobre-title">
@@ -99,6 +149,7 @@
                 src="img/bibisep.png"
                 alt="Ilustração de Bibisep"
             >
+
         </section>
 
 
@@ -120,49 +171,76 @@
 
             <ul>
 
+                <!-- PROJETO 1 -->
                 <li>
                     <article>
                         <div>
+
                             <h3>Projeto PROA</h3>
 
                             <p>
                                 Projeto focado em ajudar jovens de baixa renda.
                             </p>
 
-                            <a href="#">Saiba Mais</a>
+                            <a
+                                href="#"
+                                class="btn btn-primary"
+                            >
+                                Saiba Mais
+                            </a>
+
                         </div>
                     </article>
                 </li>
 
+
+                <!-- PROJETO 2 -->
                 <li>
                     <article>
                         <div>
+
                             <h3>Projeto PROA</h3>
 
                             <p>
                                 Projeto focado em ajudar jovens de baixa renda.
                             </p>
 
-                            <a href="#">Saiba Mais</a>
+                            <a
+                                href="#"
+                                class="btn btn-primary"
+                            >
+                                Saiba Mais
+                            </a>
+
                         </div>
                     </article>
                 </li>
 
+
+                <!-- PROJETO 3 -->
                 <li>
                     <article>
                         <div>
+
                             <h3>Projeto PROA</h3>
 
                             <p>
                                 Projeto focado em ajudar jovens de baixa renda.
                             </p>
 
-                            <a href="#">Saiba Mais</a>
+                            <a
+                                href="#"
+                                class="btn btn-primary"
+                            >
+                                Saiba Mais
+                            </a>
+
                         </div>
                     </article>
                 </li>
 
             </ul>
+
         </section>
 
 
@@ -174,19 +252,26 @@
         >
 
             <div>
+
                 <h2 id="contato-title">
-                    Pronto(a) para tirar sua <span>ideia</span> do papel?
+                    Pronto(a) para tirar sua
+                    <span>ideia</span> do papel?
                 </h2>
 
                 <p>
                     Seja para criar um produto novo, montar uma landing page
                     de alta conversão ou discutir uma oportunidade incrível.
                 </p>
+
             </div>
 
-            <form>
 
-                <label for="nome">Nome</label>
+            <!-- FORMULÁRIO -->
+            <form action="https://formspree.io/f/xvkkaweo" method="POST">
+
+                <label for="nome">
+                    Nome
+                </label>
 
                 <input
                     type="text"
@@ -194,10 +279,13 @@
                     id="nome"
                     required
                     placeholder="Ex: Rafaela Silva"
+                    autocomplete="name"
                 >
 
 
-                <label for="email">Email</label>
+                <label for="email">
+                    Email
+                </label>
 
                 <input
                     type="email"
@@ -209,7 +297,9 @@
                 >
 
 
-                <label for="telefone">Telefone</label>
+                <label for="telefone">
+                    Telefone
+                </label>
 
                 <input
                     type="tel"
@@ -221,7 +311,9 @@
                 >
 
 
-                <label for="mensagem">Mensagem</label>
+                <label for="mensagem">
+                    Mensagem
+                </label>
 
                 <textarea
                     name="mensagem"
@@ -231,11 +323,15 @@
                 ></textarea>
 
 
-                <button type="submit">
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
                     Entrar em contato
                 </button>
 
             </form>
+
         </section>
 
     </main>
@@ -249,6 +345,7 @@
         </p>
 
         <nav aria-label="Redes sociais">
+
             <ul>
 
                 <!-- LINKEDIN -->
@@ -258,6 +355,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
+
                         <span>LinkedIn</span>
 
                         <svg
@@ -272,6 +370,7 @@
                                 fill="currentColor"
                             />
                         </svg>
+
                     </a>
                 </li>
 
@@ -283,6 +382,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
+
                         <span>GitHub</span>
 
                         <svg
@@ -297,30 +397,16 @@
                                 fill="currentColor"
                             />
                         </svg>
+
                     </a>
                 </li>
-
-
-                <!-- INSTAGRAM -->
-                <!--
-                Quando quiser adicionar seu Instagram,
-                coloque o link abaixo e remova este comentário.
-
-                <li>
-                    <a
-                        href="LINK-DO-SEU-INSTAGRAM"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>Instagram</span>
-                    </a>
-                </li>
-                -->
 
             </ul>
+
         </nav>
 
     </footer>
 
 </body>
+
 </html>
