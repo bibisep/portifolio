@@ -489,13 +489,13 @@ section p {
 
 /* PROJETO 1 */
 .projetos-section li:first-child {
-    background-image: url("./img/3394.jpg");
+    background-image: url("./img/logo-proa.png");
 }
 
 
 /* PROJETO 2 */
 .projetos-section li:nth-child(2) {
-    background-image: url("./img/codigo\ wallpaper\ -\ Buscar\ con\ Google.jpg");
+    background-image: url("./img/logo-proa.png");
 
     background-position: center;
 }
@@ -503,7 +503,7 @@ section p {
 
 /* PROJETO 3 */
 .projetos-section li:nth-child(3) {
-    background-image: url("./img/Código\ fonte\ da\ área\ de\ trabalho\ e\ papel\ de\ parede\ por\ linguagem\ de\ computador\ com\ codificação\ e\ programação_\ _\ Foto\ Premium.jpg");
+    background-image: url("./img/logo-proa.png");
 }
 
 
